@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;
+	margin: 0;
+	padding: 0;}
+
+#container {width: 100%
+}
+.col {
+	background: grey;
+	border: 1px solid black;
+	position: relative;
+	margin: 1%;
+}
+	h1 {
+  font-family: Helvetica;
+  text-align: center;
+  margin: 20px 0px 30px 0px;
+}
+	h2 {
+  border: 1px solid black;
+  width: 33.33%;
+  height: 40px;
+  font-family: Helvetica;
+  text-align: center;	
+  padding: 10px 0px 40px 0px;
+  margin: 0;
+  position: absolute; 
+  top: 0;
+  right: 0;
+  
+}
+
+#ch {background-color: yellow;}
+#be {background-color: pink;}
+#su {background-color: green;}
+
+p {
+	padding: 60px 10px 0px 10px;
+	font-family: Helvetica;
+}
+
+/*-- Desktop --*/
+@media (min-width: 992px) { .col {width: 31.25%; float: left; min-height: 135px}
+
+}
+/*-- Tablet --*/
+@media (min-width: 768px) and (max-width: 991px) {.col {float: left; min-height: 140px} #col-1 {width:47.5%; } #col-2 {width: 47.5%; } #col-3 {width: 97%; }
+
+/* Mobile */
+@media (max-width: 767px) {.col {width:97%; }
+
+}
+</style>
 <head>
 	<title>Module 2 Assignment</title>
 
 </head>
 <body>
 <h1>Menu</h1>
-<div>
-<div></div>
-<div></div>
-<div></div>
+<div id="container">
+<div class="col" id="col-1"><h2 id="ch">Chicken</h2> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida purus ac mauris suscipit sodales. Morbi eros dolor, convallis at tincidunt sed, finibus ut nisi.</p></div>
+<div class="col" id="col-2"><h2 id="be">Beef</h2><p>Vestibulum sem ante, accumsan eget consequat eget, dictum id tellus. Donec luctus, libero quis pretium vestibulum, est nisl suscipit ipsum, sed viverra tortor risus eget felis</p></div>
+<div class="col" id="col-3"><h2 id="su">Sushi</h2><p>Quisque sit amet elit eget dui cursus blandit sit amet ut mauris. Phasellus scelerisque, lectus in imperdiet dignissim, magna ex aliquam eros, sit amet molestie dui massa ac dui.</p></div>
 </div>
 </body>
 </html>
