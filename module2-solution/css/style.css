@@ -29,9 +29,7 @@ h2 {
   position: absolute; 
   top: 0;
   right: 0;
-  
 }
-
 #ch {
 	background-color: yellow;
 }
@@ -41,7 +39,6 @@ h2 {
 #su {
 	background-color: #99ff99;
 }
-
 p {
 	padding: 60px 10px 0px 10px;
 	font-family: Helvetica;
@@ -62,7 +59,7 @@ p {
 		min-height: 140px;
 	} 
 	#col-1, #col-2 {
-		width:48%; 
+		width: 48%; 
 	} 
 	#col-3 {
 		width: 98%; 
@@ -71,6 +68,6 @@ p {
 /* Mobile */
 @media (max-width: 767px) {
 	.col {
-		width:98%; 
+		width: 98%; 
 	}
 }
