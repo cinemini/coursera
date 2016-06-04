@@ -7,11 +7,12 @@
 .container {
 	width: 100%
 }
-.col {
+.section {
 	background: #e6e6e6;
 	border: 1px solid black;
 	position: relative;
-	margin: 1%;
+	margin: 12px;
+	min-height: 135px
 }
 h1 {
   text-align: center;
@@ -23,7 +24,6 @@ h2 {
   height: 40px;
   text-align: center;	
   padding: 10px 0px 40px 0px;
-  margin: 0;
   position: absolute; 
   top: 0;
   right: 0;
@@ -43,28 +43,26 @@ p {
 
 /*-- Desktop --*/
 @media (min-width: 992px) { 
-	.col {
-		width: 31.33%; 
+	.col-md-4 {
+		width: 33.33%; 
 		float: left; 
-		min-height: 135px;
 	}
 }
 /*-- Tablet --*/
 @media (min-width: 768px) and (max-width: 991px) {
-	.col {
+	.col-sm-6, .col-sm-12 {
 		float: left; 
-		min-height: 135px;
 	} 
-	#col-1, #col-2 {
-		width: 48%; 
+	.col-sm-6 {
+		width: 50%; 
 	} 
-	#col-3 {
-		width: 98%; 
+	.col-sm-12{
+		width: 100%; 
 	}
 }
 /* Mobile */
 @media (max-width: 767px) {
-	.col {
-		width: 98%; 
+	.col-xs-12 {
+		width: 100%; 
 	}
 }
