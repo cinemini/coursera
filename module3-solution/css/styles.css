@@ -1,5 +1,4 @@
 body {
-	font-family: Helvetica;
 	background-color: yellow;
 }
 /*---Header---*/
@@ -8,12 +7,12 @@ body {
 	border-radius: 0;
 	border: 0;
 	height: 100px;
+	z-index: 10;
 }
 .navbar-brand {
   padding-top: 25px;
 }
 .navbar-brand h1 { /* Restaurant name */
-  font-family: Helvetica;
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
@@ -27,15 +26,19 @@ body {
 .navbar-header button.navbar-toggle {
   clear: both; 
 }
-#collapsable-nav {
-	background-color: #e6e6e6;
-}
+
 /*---Main Content---*/
 
 #menu {
-	height: 1000px;
+	height: 1500px;
 	background-color: #99ff99;
 }
 h2 {
 	padding-bottom: 10px;
+}
+/* Mobile */
+@media (max-width: 767px) {
+	#collapsable-nav {
+		background-color: #e6e6e6;
+	}
 }
